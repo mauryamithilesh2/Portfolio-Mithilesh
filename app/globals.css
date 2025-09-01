@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+
+@theme {
+  /*  Colors */
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001F;
+
+  /* Fonts */
+  --font-Outfit: "Outfit", sans-serif;
+  --font-Ovo: "Ovo", serif;
+
+/* Custom Shadows */
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+
+ --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+
+/* ================= Base Styles ================= */
+body {
+  background-color: var(--color-bg, #fff);
+  color: var(--color-text, #000);
+  font-family: var(--font-Outfit);
+}
+
+/* ================= Dark Mode Selector ================= */
+.dark body {
+  background-color: var(--color-darkTheme);
+  color: var(--color-lightHover);
+}
+
+/* ================= Utilities ================= */
+
+/* Background Colors */
+.bg-lightHover { background-color: var(--color-lightHover); }
+.bg-darkHover { background-color: var(--color-darkHover); }
+.bg-darkTheme { background-color: var(--color-darkTheme); }
+
+/* Fonts */
+.font-Outfit { font-family: var(--font-Outfit); }
+.font-Ovo { font-family: var(--font-Ovo); }
+
+/* Shadows */
+.shadow-black { box-shadow: var(--shadow-black); }
+.shadow-white { box-shadow: var(--shadow-white); }
+
+/* Grid */
+.grid-auto { grid-template-columns: var(--grid-template-columns-auto); }
+
+/* Hover */
+.hover\:bg-lightHover:hover { background-color: var(--color-lightHover); }
+.hover\:bg-darkHover:hover { background-color: var(--color-darkHover); }
+
+/* ================= Dark Mode Utilities ================= */
+.dark\:bg-darkTheme { background-color: var(--color-darkTheme); }
+.dark\:bg-darkHover { background-color: var(--color-darkHover); }
+.dark\:hover\:bg-darkHover:hover { background-color: var(--color-darkHover); }
+
+
+.dark\:hidden { display: none; }
+.dark\:block { display: block; }
+
+
+
+
