@@ -26,7 +26,7 @@ function Services({ isDarkMode }) {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I'm Full stack developer i have built many project on django react ,django rest api
+        I offer a range of professional services to help bring ideas to life through modern web technologies. My focus is on delivering secure, scalable, and user-friendly solutions tailored to meet specific project requirements.
       </motion.p>
 
       <motion.div
