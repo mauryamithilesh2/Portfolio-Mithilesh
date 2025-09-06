@@ -49,13 +49,13 @@ function Contact({ isDarkMode }) {
         transition={{ duration: 0.5, delay: 0.5 }}
         className='text-center mb-2 text-5xl font-Ovo'>Get in touch</motion.h2>
 
-      <motion.p
+      {/* <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         I'm Full stack developer i have built many project on django react ,django rest api
-      </motion.p>
+      </motion.p> */}
 
       <motion.form
         initial={{ opacity: 0 }}
