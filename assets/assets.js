@@ -82,22 +82,22 @@ export const workData = [
     {
         title: 'DriveMart',
         description: 'Full Stack',
-        bgImage: '/work-1.png',
+        bgImage: '/work-11.png',
     },
     {
         title: 'Face recognition attendance system',
         description: 'Web Application',
-        bgImage: '/work-2.png',
+        bgImage: '/work-22.png',
     },
     {
         title: 'Educational Website',
         description: 'Web Application',
-        bgImage: '/work-4.png',
+        bgImage: '/work-44.png',
     },
     {
         title: 'Temp-Teller',
         description: 'Web Application',
-        bgImage: '/work-3.png',
+        bgImage: '/work-33.png',
     },
 ]
 
