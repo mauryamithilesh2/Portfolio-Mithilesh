@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import UniverseBackground from "./components/UniverseBackground";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -35,6 +36,7 @@ else{
 
   return (
    <>
+   <UniverseBackground isDarkMode={isDarkMode} />
    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
    <Header isDarkMode={isDarkMode}/>
    <About isDarkMode={isDarkMode}/>
