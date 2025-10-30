@@ -58,7 +58,7 @@ export function initBackgroundStars() {
     star.style.left = `-100px`;
     star.style.width = "3px";
     star.style.height = "100px";
-    
+    star.style.pointerEvents = "none";
     const colors = theme === "dark" 
       ? ["linear-gradient(45deg, #fbbf24, #ec4899, transparent)", "linear-gradient(45deg, #10b981, #8b5cf6, transparent)"]
       : ["linear-gradient(45deg, #ffcc33, transparent)"];

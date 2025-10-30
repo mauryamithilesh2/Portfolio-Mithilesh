@@ -8,7 +8,7 @@ function Header({ isDarkMode }) {
     <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 relative'>
       {/* Cosmic Ring around profile */}
       <motion.div
-        className="absolute inset-0 flex items-center justify-center"
+        className="absolute inset-0 flex items-center justify-center pointer-events-none"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -98,7 +98,7 @@ function Header({ isDarkMode }) {
         Entry-Level Software Developer | Django • REST APIs • PostgreSQL • React • Postman • Machine Learning
       </motion.p>
 
-      <div className='flex flex-col sm:flex-row items-center gap-6 mt-8'>
+      <div className='flex flex-col sm:flex-row items-center gap-6 mt-8 relative z-10'>
         <motion.a 
           initial={{y:30,opacity:0}}
           whileInView={{y:0,opacity:1}}
@@ -125,7 +125,10 @@ function Header({ isDarkMode }) {
           initial={{y:30,opacity:0}}
           whileInView={{y:0,opacity:1}}
           transition={{duration:0.6,delay:1.2}}
-          href="/Mithilesh_Maurya_Resume.pdf" download
+          href="/Mithilesh_Maurya_Resume.pdf"  download="Mithilesh_Maurya_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ pointerEvents: "auto" }}
           className={`px-10 py-4 border rounded-full flex items-center gap-3 font-Ovo cosmic-hover transition-all duration-300 ${
             isDarkMode 
               ? 'border-star-gold bg-star-gold/10 text-star-gold hover:bg-star-gold hover:text-black' 
