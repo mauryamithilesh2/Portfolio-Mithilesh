@@ -32,11 +32,11 @@ useEffect(()=>{
    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-500
                     ${isDarkMode
       ? isScroll
-        ? "bg-space-black/95 text-white shadow-nebula backdrop-blur-xl border-b border-cosmic-pink/20"
-        : "bg-transparent text-lightHover"
+        ? " text-white    border-cosmic-pink/20"
+        : " text-lightHover"
       : isScroll
-        ? "bg-white/80 text-black shadow-lg backdrop-blur-xl border-b border-gray-200"
-        : "bg-transparent text-black"
+        ? " text-black  border-gray-200"
+        : " text-black"
     }`}>
     <motion.a href="#top" 
         whileHover={{ scale: 1.05 }}
@@ -49,8 +49,8 @@ useEffect(()=>{
            ? "bg-space-black/80 text-white border border-cosmic-pink/30 shadow-cosmic" 
            : "bg-space-black/60 text-lightHover border border-star-gold/30 shadow-cosmic"
         : isScroll
-          ? "bg-white/80 shadow-lg border border-gray-200"
-          : "bg-white/90 shadow-md border border-gray-100"
+          ? "bg-white shadow-lg border border-gray-200"
+          : "bg-white shadow-md border border-gray-100"
       } `}>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <a className='font-Ovo cosmic-hover px-4 py-2 rounded-full transition-all duration-300 hover:text-star-gold' href="#top"> Home</a>
